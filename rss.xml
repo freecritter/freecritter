@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>freecritter.xyz</title>
+  <link>https://freecritter.xyz</link>
+  <description>Lightning economics, Bitcoin treasury strategy, and the operational income layer.</description>
+  <language>en-us</language>
+  <atom:link href="https://freecritter.xyz/rss.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Static capital bias and the Lightning return illusion</title>
+    <link>https://freecritter.xyz/#blog</link>
+    <description>An 8 basis point fee on capital that turns over 65 times annually is not 8 basis points. It is 520 basis points. The analytical error that causes traditional financial analysts to dismiss Lightning routing is failing to account for capital cycling through productive use multiple times per year.</description>
+    <pubDate>Thu, 22 May 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-static-capital-bias</guid>
+  </item>
+  <item>
+    <title>Bitcoin's third custody model</title>
+    <link>https://freecritter.xyz/#blog</link>
+    <description>Jensen and Meckling established that traditional finance offers only custody by a manager or self-custody. Lightning introduces a third option: self-custody with managed operations. The operator manages routing, not assets.</description>
+    <pubDate>Thu, 22 May 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-third-custody-model</guid>
+  </item>
+  <item>
+    <title>Why your Bitcoin treasury earns zero</title>
+    <link>https://freecritter.xyz/#blog</link>
+    <description>More than 190 public companies hold Bitcoin. For the vast majority, those holdings generate zero operational income. The question facing treasury professionals is no longer whether to allocate. The question is what the allocated capital does once it sits on the balance sheet.</description>
+    <pubDate>Thu, 22 May 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-treasury-earns-zero</guid>
+  </item>
+</channel>
+</rss>
