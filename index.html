@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chris Ritter - Lightning Economics</title>
-<meta name="description" content="Building the operational income layer for Bitcoin treasury companies. Chief Strategy Officer at ZEUS. Author, Lightning Economics.">
+<title>Chris Ritter | AI · Bitcoin · Emerging Tech</title>
+<meta name="description" content="Strategy and research at the intersection of AI, Bitcoin, and emerging financial technology. Chief Strategy Officer at ZEUS, author of Lightning Economics.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://freecritter.xyz">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Chris Ritter - Lightning Economics">
-<meta property="og:description" content="Building the operational income layer for Bitcoin treasury companies. Chief Strategy Officer at ZEUS. Author, LIGHTNING ECONOMICS.">
+<meta property="og:title" content="Chris Ritter | AI · Bitcoin · Emerging Tech">
+<meta property="og:description" content="Strategy and research at the intersection of AI, Bitcoin, and emerging financial technology. Chief Strategy Officer at ZEUS, author of Lightning Economics.">
 <meta property="og:url" content="https://freecritter.xyz">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chris Ritter - Lightning Economics">
-<meta name="twitter:description" content="Building the operational income layer for Bitcoin treasury companies. Chief Strategy Officer at ZEUS.">
+<meta name="twitter:title" content="Chris Ritter | AI · Bitcoin · Emerging Tech">
+<meta name="twitter:description" content="Strategy and research at the intersection of AI, Bitcoin, and emerging financial technology. Chief Strategy Officer at ZEUS, author of Lightning Economics.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,10 +27,11 @@
   },
   "url": "https://freecritter.xyz",
   "sameAs": [
-    "https://www.linkedin.com/in/",
-    "https://twitter.com/"
+    "https://www.linkedin.com/in/freecritter/",
+    "https://x.com/freecritterxyz",
+    "https://primal.net/freecritter"
   ],
-  "knowsAbout": ["Bitcoin", "Lightning Network", "Lightning Economics", "Bitcoin Treasury", "Lightning Routing Income"]
+  "knowsAbout": ["Artificial Intelligence", "Applied AI", "Bitcoin", "Lightning Network", "Emerging Financial Technology", "Lightning Economics", "Bitcoin Treasury"]
 }</script>
 <link rel="alternate" type="application/rss+xml" title="freecritter.xyz" href="/rss.xml">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='11' y='9' width='6' height='30' rx='1.2' fill='%23B8860B'/%3E%3Crect x='31' y='9' width='6' height='30' rx='1.2' fill='%23B8860B'/%3E%3Crect x='8' y='5' width='32' height='4' rx='1.2' fill='%23B8860B'/%3E%3Crect x='9' y='38' width='10' height='3' rx='1' fill='%23B8860B'/%3E%3Crect x='29' y='38' width='10' height='3' rx='1' fill='%23B8860B'/%3E%3Cpath d='M25.5 15L22.5 24H25L23 34L27 23H24.2L25.5 15Z' fill='%23B8860B' opacity='0.3'/%3E%3C/svg%3E">
@@ -101,12 +102,26 @@ section { display: none; padding: 48px 0 64px; }
 section.active { display: block; }
 
 /* About */
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.about-avatar {
+  flex: 0 0 auto;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
 .about-intro {
   font-family: var(--serif);
   font-size: 22px;
   line-height: 1.55;
-  margin-bottom: 32px;
   font-weight: 400;
+  margin: 0;
 }
 .about-body p {
   margin-bottom: 20px;
@@ -215,6 +230,15 @@ section.active { display: block; }
   margin-bottom: 16px;
   font-style: italic;
 }
+.research-cover {
+  float: right;
+  width: 150px;
+  margin: 0 0 12px 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  transition: opacity 0.2s;
+}
+.research-cover:hover { opacity: 0.9; }
 .research-card p {
   font-size: 15px;
   line-height: 1.6;
@@ -257,7 +281,9 @@ footer a:hover { color: var(--text); }
 @media (max-width: 480px) {
   header h1 { font-size: 24px; }
   .about-intro { font-size: 19px; }
+  .about-header { flex-direction: column; align-items: flex-start; gap: 14px; }
   .research-card { padding: 24px; }
+  .research-cover { float: none; display: block; width: 130px; margin: 0 0 16px 0; }
   .post-body { font-size: 17px; }
 }
 </style>
@@ -282,36 +308,40 @@ footer a:hover { color: var(--text); }
     </div>
     <nav>
       <a href="#about" class="active" onclick="show('about')">About</a>
-      <a href="#blog" onclick="show('blog')">Writing</a>
       <a href="#research" onclick="show('research')">Research</a>
+      <a href="#blog" onclick="show('blog')">Writing</a>
     </nav>
   </header>
 
   <!-- ABOUT -->
   <section id="about" class="active">
-    <p class="about-intro">I'm Chris. I'm building the operational income layer for Bitcoin treasury companies and those adding bitcoin to their balance sheet, at <a href="https://zeusln.com" target="_blank">ZEUS</a>.</p>
+    <div class="about-header">
+      <img class="about-avatar" src="avatar.jpg" alt="Chris Ritter" width="72" height="72">
+      <p class="about-intro">I'm Chris Ritter. I work at the intersection of AI, Bitcoin, and emerging financial technology, currently as Chief Strategy Officer at <a href="https://zeusln.com" target="_blank">ZEUS</a>.</p>
+    </div>
 
     <div class="about-body">
-      <p>Most companies that hold Bitcoin on their balance sheet generate zero operational income from those holdings. The dominant playbook requires capital markets access, mNAV above 1, and continuous issuance capability. At least 37 of the top 100 Bitcoin treasury companies trade below net asset value. For most of the market, the only available return on self-custodied Bitcoin is price appreciation.</p>
+      <p>My edge is range and speed: I move onto the frontier of a field, teach myself its substance faster than most, and turn it into strategy, research, and a public voice. My conviction is specific: of everything in the digital assets and crypto space, Bitcoin is where I've found the most durable value, and where my research has gone deepest. I work across blockchain and emerging financial technology broadly, with Bitcoin as the center of gravity. At ZEUS I authored <a href="https://zeusln.com/lightning-economics" target="_blank">Lightning Economics</a>, the first published ROIC framework for property-preserving Bitcoin yield, now a primary industry reference.</p>
 
-      <p>Lightning changes that. Capital deployed to the Lightning Network earns fee income through routing, turning over approximately 7x annually, at zero leverage, with the deployed capital, transacted medium, and earned revenue all being the same bitcoin, held by the same person, under the same custody. No property is surrendered.</p>
+      <p>I've deliberately built expertise across several domains: finance, computer science, and AI/ML, going deep in each rather than dabbling. Applied AI is what makes that pace possible. I design and run multi-agent AI workflows and build with these tools daily, using them to learn, refine new ideas, and work through complex problems. The point is always efficient output, and bringing people along by translating what I'm exploring into terms the teams, executives, and audiences I work with can use.</p>
 
-      <p>I'm Chief Strategy Officer at ZEUS, where we operate managed Lightning infrastructure, including white-glove routing operations for institutional clients, family offices, HNWIs, and those adding bitcoin to their balance sheet. Before ZEUS, I founded and exited a digital products company over 13 years. Prior to that, I coached Olympians. <a href="https://www.peacocktv.com/watch-online/sports/olympics/the-greatest-race/c513b3a4-0677-39ec-a949-bba22e4336c9" target="_blank">Cullen Jones</a> was the most recognizable one.</p>
+      <p>My energy and focus go toward turning emerging technology into strategy, credible research, and adoption for organizations operating ahead of the curve.</p>
 
-      <p class="muted">Find my broadcasts on <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a> and <a href="https://twitter.com/" target="_blank">X</a>, I engage more on <a href="https://nostr.com/" target="_blank">nostr</a>.</p>
+      <p>Over 13 years, I founded, scaled, and exited a remote-first digital products company. Before becoming an entrepreneur, I coached multiple Olympians, culminating in a world-record performance and five medals at the 2008 Beijing Olympics. As a coach and as a founder/operator, I worked the way I still do: an innovator bridging domains to solve problems in novel ways, with the results to show for it.</p>
     </div>
 
     <div class="credentials">
       <div class="credential-top">
-        <span>MBA + Master of Finance, IOWA</span>
+        <span>AI</span>
+        <span>Bitcoin</span>
+        <span>Emerging Tech</span>
+        <span>MBA + MS Finance, IOWA</span>
+      </div>
+      <div class="credential-bottom">
         <span>AI/ML</span>
         <span>CS</span>
         <span>Founder/Operator</span>
-      </div>
-      <div class="credential-bottom">
-        <span>Product minded</span>
-        <span>Design directed</span>
-        <span>Digital assets on my mind (mostly Bitcoin)</span>
+        <span>Product &amp; Design</span>
       </div>
     </div>
   </section>
@@ -347,6 +377,9 @@ footer a:hover { color: var(--text); }
   <!-- RESEARCH -->
   <section id="research">
     <div class="research-card">
+      <a href="https://zeusln.com/lightning-economics" target="_blank">
+        <img class="research-cover" src="report-cover.jpg" alt="Lightning Economics report cover" width="150">
+      </a>
       <h3>LIGHTNING ECONOMICS</h3>
       <div class="subtitle">The bridge between Bitcoin's two identities</div>
       <p>The first published ROIC framework for Lightning-deployed capital. Co-published with Axiom BTC Capital. Examines how Lightning generates returns through capital velocity, why Bitcoin is uniquely suited to this model, which properties must be preserved for yield to qualify as native, and whether the growth trajectory is self-reinforcing.</p>
@@ -358,10 +391,10 @@ footer a:hover { color: var(--text); }
   <footer>
     <span>freecritter.xyz</span>
     <span>
-      <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a> · 
-      <a href="https://twitter.com/" target="_blank">X</a> · 
-      <a href="/rss.xml">RSS</a> · 
-      <a href="https://nostr.com/" target="_blank">nostr</a>
+      <a href="https://www.linkedin.com/in/freecritter/" target="_blank">LinkedIn</a> · 
+      <a href="https://primal.net/freecritter" target="_blank">NOSTR</a> · 
+      <a href="https://x.com/freecritterxyz" target="_blank">X</a> · 
+      <a href="/rss.xml">RSS</a>
     </span>
   </footer>
 </div>
