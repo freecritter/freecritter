@@ -3,29 +3,50 @@
 <channel>
   <title>freecritter.xyz</title>
   <link>https://freecritter.xyz</link>
-  <description>Lightning economics, Bitcoin treasury strategy, and the operational income layer.</description>
+  <description>AI, Bitcoin, and emerging financial technology. Lightning economics and Bitcoin treasury strategy.</description>
   <language>en-us</language>
   <atom:link href="https://freecritter.xyz/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
-    <title>Static capital bias and the Lightning return illusion</title>
+    <title>The digital credit threshold: who actually gets to run the Saylor playbook</title>
     <link>https://freecritter.xyz/#blog</link>
-    <description>An 8 basis point fee on capital that turns over 65 times annually is not 8 basis points. It is 520 basis points. The analytical error that causes traditional financial analysts to dismiss Lightning routing is failing to account for capital cycling through productive use multiple times per year.</description>
-    <pubDate>Thu, 22 May 2026 00:00:00 GMT</pubDate>
-    <guid>https://freecritter.xyz/post-static-capital-bias</guid>
+    <description>Every Bitcoin treasury is told to do what Saylor does. For most of them the math says they can't. The playbook needs a premium and a scale they don't have.</description>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-digital-credit-threshold</guid>
   </item>
   <item>
-    <title>Bitcoin's third custody model</title>
+    <title>The third custody model: keep the keys, outsource the operations</title>
     <link>https://freecritter.xyz/#blog</link>
-    <description>Jensen and Meckling established that traditional finance offers only custody by a manager or self-custody. Lightning introduces a third option: self-custody with managed operations. The operator manages routing, not assets.</description>
-    <pubDate>Thu, 22 May 2026 00:00:00 GMT</pubDate>
+    <description>Finance gave you two choices: hand your keys to a custodian, or run everything yourself. Lightning adds a third. You keep the keys, a professional runs the node, and you can leave in two weeks.</description>
+    <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
     <guid>https://freecritter.xyz/post-third-custody-model</guid>
   </item>
   <item>
-    <title>Why your Bitcoin treasury earns zero</title>
+    <title>The property filter: why Lightning, not staking or lending</title>
     <link>https://freecritter.xyz/#blog</link>
-    <description>More than 190 public companies hold Bitcoin. For the vast majority, those holdings generate zero operational income. The question facing treasury professionals is no longer whether to allocate. The question is what the allocated capital does once it sits on the balance sheet.</description>
-    <pubDate>Thu, 22 May 2026 00:00:00 GMT</pubDate>
-    <guid>https://freecritter.xyz/post-treasury-earns-zero</guid>
+    <description>Bitcoin has six core properties worth protecting. Every yield mechanism I tested surrenders at least one. Routing on Lightning surrenders none. Here is the test.</description>
+    <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-property-filter</guid>
+  </item>
+  <item>
+    <title>Same-asset unity: one asset from capital to revenue</title>
+    <link>https://freecritter.xyz/#blog</link>
+    <description>Every other yield has a seam, where you swap assets or hand over custody. Routing on Lightning has none. The capital, the medium, and the revenue are one and the same bitcoin.</description>
+    <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-same-asset-unity</guid>
+  </item>
+  <item>
+    <title>Static capital bias and the Lightning return illusion</title>
+    <link>https://freecritter.xyz/#blog</link>
+    <description>An 8 basis point fee looks like nothing, until you see that the capital behind it turns over about 65 times a year. The fee is small. The return is not.</description>
+    <pubDate>Thu, 07 May 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-static-capital-bias</guid>
+  </item>
+  <item>
+    <title>Native Yield: the third category of Bitcoin treasury returns</title>
+    <link>https://freecritter.xyz/#blog</link>
+    <description>Most public companies holding Bitcoin earn nothing on it. The playbook they are told to copy only works for a handful. There is a third category.</description>
+    <pubDate>Sun, 26 Apr 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-native-yield</guid>
   </item>
 </channel>
 </rss>

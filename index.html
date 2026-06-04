@@ -141,22 +141,23 @@ section.active { display: block; }
   padding-top: 24px;
   border-top: 1px solid var(--border);
 }
-.credential-top {
+.cred-strip {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 28px;
+  align-items: center;
+  justify-content: center;
   font-size: 13px;
   font-weight: 500;
   color: var(--text);
   letter-spacing: 0.1px;
+  line-height: 1.9;
 }
-.credential-bottom {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 18px;
-  font-size: 13px;
-  color: var(--muted);
-  margin-top: 8px;
+.cred-strip span { white-space: nowrap; }
+.cred-strip span:not(:last-child)::after {
+  content: "\00B7";
+  color: var(--accent);
+  margin: 0 11px;
+  font-weight: 400;
 }
 
 /* Blog */
@@ -336,17 +337,11 @@ footer a:hover { color: var(--text); }
     </div>
 
     <div class="credentials">
-      <div class="credential-top">
+      <div class="cred-strip">
         <span>AI</span>
         <span>Bitcoin</span>
         <span>Emerging Tech</span>
         <span>MBA + MS Finance, IOWA</span>
-      </div>
-      <div class="credential-bottom">
-        <span>AI/ML</span>
-        <span>CS</span>
-        <span>Founder/Operator</span>
-        <span>Product &amp; Design</span>
       </div>
     </div>
   </section>
@@ -356,19 +351,34 @@ footer a:hover { color: var(--text); }
     <div id="blog-list-view">
       <ul class="blog-list">
         <li>
-          <div class="blog-date">May 2026</div>
-          <div class="blog-title"><a href="#" onclick="showPost('post1'); return false;">Static capital bias and the Lightning return illusion</a></div>
-          <div class="blog-excerpt">An 8 basis point fee on capital that turns over 65 times annually is not 8 basis points. It is 520 basis points. The analytical error that causes traditional financial analysts to dismiss Lightning routing is failing to account for capital cycling through productive use multiple times per year.</div>
+          <div class="blog-date">June 2026</div>
+          <div class="blog-title"><a href="#" onclick="showPost('post1'); return false;">The digital credit threshold: who actually gets to run the Saylor playbook</a></div>
+          <div class="blog-excerpt">Every Bitcoin treasury is told to do what Saylor does. For most of them the math says they can't. The playbook needs a premium and a scale they don't have.</div>
         </li>
         <li>
           <div class="blog-date">May 2026</div>
-          <div class="blog-title"><a href="#" onclick="showPost('post2'); return false;">Bitcoin's third custody model</a></div>
-          <div class="blog-excerpt">Jensen and Meckling established that traditional finance offers only custody by a manager or self-custody. Lightning introduces a third option: self-custody with managed operations. The operator manages routing, not assets.</div>
+          <div class="blog-title"><a href="#" onclick="showPost('post2'); return false;">The third custody model: keep the keys, outsource the operations</a></div>
+          <div class="blog-excerpt">Finance gave you two choices: hand your keys to a custodian, or run everything yourself. Lightning adds a third. You keep the keys, a professional runs the node, and you can leave in two weeks.</div>
         </li>
         <li>
           <div class="blog-date">May 2026</div>
-          <div class="blog-title"><a href="#" onclick="showPost('post3'); return false;">Why your Bitcoin treasury earns zero</a></div>
-          <div class="blog-excerpt">More than 190 public companies hold Bitcoin. For the vast majority, those holdings generate zero operational income. The question facing treasury professionals is no longer whether to allocate. The question is what the allocated capital does once it sits on the balance sheet.</div>
+          <div class="blog-title"><a href="#" onclick="showPost('post3'); return false;">The property filter: why Lightning, not staking or lending</a></div>
+          <div class="blog-excerpt">Bitcoin has six core properties worth protecting. Every yield mechanism I tested surrenders at least one. Routing on Lightning surrenders none. Here is the test.</div>
+        </li>
+        <li>
+          <div class="blog-date">May 2026</div>
+          <div class="blog-title"><a href="#" onclick="showPost('post4'); return false;">Same-asset unity: one asset from capital to revenue</a></div>
+          <div class="blog-excerpt">Every other yield has a seam, where you swap assets or hand over custody. Routing on Lightning has none. The capital, the medium, and the revenue are one and the same bitcoin.</div>
+        </li>
+        <li>
+          <div class="blog-date">May 2026</div>
+          <div class="blog-title"><a href="#" onclick="showPost('post5'); return false;">Static capital bias and the Lightning return illusion</a></div>
+          <div class="blog-excerpt">An 8 basis point fee looks like nothing, until you see that the capital behind it turns over about 65 times a year. The fee is small. The return is not.</div>
+        </li>
+        <li>
+          <div class="blog-date">April 2026</div>
+          <div class="blog-title"><a href="#" onclick="showPost('post6'); return false;">Native Yield: the third category of Bitcoin treasury returns</a></div>
+          <div class="blog-excerpt">Most public companies holding Bitcoin earn nothing on it. The playbook they are told to copy only works for a handful. There is a third category.</div>
         </li>
       </ul>
     </div>
@@ -387,10 +397,10 @@ footer a:hover { color: var(--text); }
       </a>
       <h3>LIGHTNING ECONOMICS</h3>
       <div class="subtitle">The bridge between Bitcoin's two identities</div>
-      <p>The first published ROIC framework for Lightning-deployed capital. Co-published with Axiom BTC Capital. Examines how Lightning generates returns through capital velocity, why Bitcoin is uniquely suited to this model, which properties must be preserved for yield to qualify as native, and whether the growth trajectory is self-reinforcing.</p>
+      <p>The first published ROIC framework for Lightning-deployed capital. Co-published with Axiom. Examines how Lightning generates returns through capital velocity, why Bitcoin is uniquely suited to this model, which properties must be preserved for yield to qualify as native, and whether the growth trajectory is self-reinforcing.</p>
       <a href="https://zeusln.com/lightning-economics" target="_blank" class="btn">Read the report</a>
     </div>
-    <p class="research-note">Published April 2026. Authored by Chris Ritter. Reviewed by Allen Farrington, Ryan Gentry, Freddie New, and Scott Marmoll. Co-published with Axiom BTC Capital.</p>
+    <p class="research-note">Published April 2026. Authored by Chris Ritter. Reviewed by Allen Farrington, Ryan Gentry, Freddie New, and Scott Marmoll. Co-published with <a href="https://www.axiomventures.vc" target="_blank">Axiom Venture Partners Ltd</a>.</p>
   </section>
 
   <footer>
@@ -407,19 +417,34 @@ footer a:hover { color: var(--text); }
 <script>
 var posts = {
   post1: {
-    title: 'Static capital bias and the Lightning return illusion',
-    date: 'May 2026',
-    body: '<p>Traditional financial analysts look at Lightning routing fees and see basis points. Single-digit basis points. And they stop there.</p><p>The error has a name now: static capital bias. It is the default assumption that capital deployed to Lightning sits still, earning one fee, like a bond earning one coupon. The analytical error is failing to account for capital cycling through productive use multiple times per year.</p><p>An 8 basis point fee on capital that turns over 65 times annually is not 8 basis points. It is 520 basis points, before accounting for the compounding effect of reinvested fees.</p><p>The Olympus node operated by ZEUS has realized a 7.03x annualized capital turnover on total deployed capacity. On the narrower base of capital specifically allocated to routing, 64.7x. The DuPont decomposition shows how thin fee margins compound through this velocity to produce a 5.58% gross ROIC on a trailing twelve-month basis.</p><p>Over five quarters, the effective fee rate compressed from 17.9 bps to 6.8 bps. Capital velocity on routing capital accelerated from 33x to 88x. Gross ROIC held between 5% and 6.4% across every quarter. The fee rate fell 62%. Velocity rose 162%. Returns were stable.</p><p>This is not a yield instrument. It is a working capital business with the return profile of extreme cost leadership: thin margin per transaction, extraordinary turnover. Banks reach 11.35% ROE by stacking 10.7x leverage on 1.14% ROA. Lightning generates multiples of banking ROA at zero leverage, through velocity alone.</p><p>The analysts who dismissed Lightning economics did not get the data wrong. They got the model wrong. Static capital bias is not a knowledge gap. It is a framework gap. The correct framework existed in DuPont analysis for a century. It just had not been applied here.</p>'
+    title: "The digital credit threshold: who actually gets to run the Saylor playbook",
+    date: "June 2026",
+    body: "<p>Every Bitcoin treasury company gets the same advice: do what Saylor does. Issue stock, buy Bitcoin, repeat. It is good advice for the handful of companies that can run it, and quietly impossible for most of the rest.</p><p>The Strategy flywheel only spins under one condition: your stock has to trade above the value of the Bitcoin it represents. Call it mNAV above 1. When it does, you issue shares at a premium, buy Bitcoin with the proceeds, and your Bitcoin-per-share goes up, which justifies the premium, which lets you issue again. Beautiful, while it lasts.</p><p>Now invert the condition. The moment your stock trades below the value of its Bitcoin, mNAV under 1, the same machine runs in reverse. Issuing shares to buy Bitcoin now dilutes your existing holders instead of enriching them. The flywheel does not slow down, it stops, because the one move it depends on becomes value-destroying. At least 37 of the top 100 treasury companies already trade below net asset value. For them the playbook is not a strategy, it is a door that already closed.</p><p>There is a size gate underneath the premium gate. Call it the digital credit threshold. Strive's CEO put numbers on it: institutional buyers of preferred equity wanted a minimum of $200 million in issuance, with real appetite starting above $500 million. At around $65,000 a coin, that is about 3,100 bitcoin to get in the door and about 7,700 to be taken seriously. A company holding 50 to 500 bitcoin is not close. And the preferred dividends that come with the model demand ongoing cash, which pure accumulation does not produce, so the cash has to come from issuing more equity or selling the Bitcoin you were trying to accumulate.</p><p>So the credit playbook needs three things at once: a durable premium, real scale, and continuous access to capital markets. Most treasuries have none of the three, and being told to copy a model built on all three is not a plan.</p><p>This is the pain the rest of my writing answers. If you cannot issue your way to a return, the question becomes what your Bitcoin can earn while you simply hold it. That is the third category, Native Yield, and I worked the whole map out in <a href='https://zeusln.com/lightning-economics' target='_blank'>Lightning Economics</a>.</p>"
   },
   post2: {
-    title: 'Bitcoin\'s third custody model',
-    date: 'May 2026',
-    body: '<p>Jensen and Meckling established in 1976 that the principal-agent problem is inherent to economic organization. Traditional finance offers only two options: custody by a manager, or self-custody. You either hand your assets to someone who manages them (and hope agency costs don\'t consume the return), or you manage them yourself (and accept the operational burden).</p><p>Lightning introduces a third model: self-custody with managed operations.</p><p>The BOLT specification separates key types architecturally. The htlc_basepoint handles operational protocol signing while the payment_basepoint controls fund custody. The operator manages routing, not assets. If the node operator disappears tomorrow, the asset holder broadcasts a commitment transaction and recovers all funds within approximately two weeks. No cooperation required.</p><p>This is not a theoretical distinction. It resolves the historical binary that has constrained every institutional Bitcoin deployment: companies no longer choose between managing their own infrastructure and surrendering their keys.</p><p>The Validating Lightning Signer implements more than fifty validation policies, preventing revoked commitment transactions and channel closures to unapproved destinations. The architectural foundation is proven. Enterprise-grade enforcement is being shipped.</p><p>For the CFO evaluating Lightning routing as an operational income mechanism, the third custody model is the answer to the question they will ask first: "Who holds the keys?"</p><p>You do. The operator routes payments. You hold the asset. The protocol enforces the boundary.</p>'
+    title: "The third custody model: keep the keys, outsource the operations",
+    date: "May 2026",
+    body: "<p>The first question any serious treasury asks about a managed node is the right one: who holds the keys.</p><p>For most of financial history there were only two answers, and Jensen and Meckling formalized why. You either hand your assets to a manager and take on full principal-agent risk, since a custodian can fail, freeze you, or misbehave. Or you self-custody and do everything yourself, which carries no counterparty risk and offers no help. Custody by someone else, or all the work on you. Pick one.</p><p>Lightning adds a third: a third custody model, self-custody with managed operations, which I set against the other two in <a href='https://zeusln.com/lightning-economics' target='_blank'>Lightning Economics</a>. You keep the keys. A professional runs the node.</p><p>This is not a marketing claim, it is in the protocol. BOLT #3 separates two kinds of keys. One signs the routing operations. A different one controls the funds. An operator can be handed the first and never the second, so they can manage your channels and your fees while having no ability to move your bitcoin. The operator routes payments. They do not hold assets.</p><p>What makes it credible is the exit. If your operator disappears tomorrow, you broadcast a commitment transaction and recover everything in about two weeks, with no cooperation from them required. That is why the principal-agent risk here is not full, the way it is with a custodian, and not zero, the way it is in pure self-custody, but bounded. You always hold the lever to leave.</p><p>There is one honest edge to flag. Holding the routing key, a misbehaving operator could in theory try to push payments you did not authorize. The fix is a policy layer called VLS, the Validating Lightning Signer, which already enforces more than fifty rules, runs in production today behind Blockstream's Greenlight, and is hardening toward a 1.0 release. Current deployments run on remote signing; full policy enforcement is shipping.</p><p>So the binary is gone. You no longer choose between running your own infrastructure and surrendering your bitcoin to run it. You keep the keys, someone competent runs the operation, and the worst case is a two-week exit with your coins intact.</p>"
   },
   post3: {
-    title: 'Why your Bitcoin treasury earns zero',
-    date: 'May 2026',
-    body: '<p>More than 190 public companies hold Bitcoin. For the vast majority, those holdings generate zero operational income.</p><p>The dominant playbook requires capital markets access, mNAV above 1, and continuous issuance capability. Digital credit works. Its execution by Strategy has been extraordinary. But it depends on favorable conditions continuing. At least 37 of the top 100 Bitcoin treasury companies trade below net asset value. For them, the dominant playbook is something they observe, not something they can execute.</p><p>The question facing treasury professionals is no longer whether to allocate. Fidelity\'s own institutional research addresses that question. The question is what the allocated capital does once it sits on the balance sheet.</p><p>For most companies, the answer today is nothing.</p><p>Lightning changes the answer. Capital deployed to the Lightning Network earns fee income through routing, with a documented capital velocity of 7x annually on total deployed capacity. The deployed capital, transacted medium, and earned revenue are the same bitcoin, held by the same person, under the same custody. No property is surrendered.</p><p>This is native yield: the third category of Bitcoin treasury returns, alongside digital credit and derivative yield. Unlike the alternatives, it requires no surrender of the underlying asset\'s properties. The income does not depend on mNAV premium, capital markets sentiment, or BTC price appreciation.</p><p>The opportunity cost of idle, self-custodied Bitcoin that preserves all six core properties is zero. Any positive operational income changes the calculus entirely.</p>'
+    title: "The property filter: why Lightning, not staking or lending",
+    date: "May 2026",
+    body: "<p>The question I get most often is not whether Lightning works. It is why Lightning and not something easier, like lending the bitcoin out or selling covered calls or wrapping it onto another chain.</p><p>The answer is a filter, and it is built from Bitcoin's own properties rather than any standard I made up. Bitcoin is valuable because it has six of them: self-custody, permissionless access, trustless operation, native settlement, fixed supply, and a sixth that usually goes unstated, denominational unity, meaning the asset you hold, the asset you transact, and the asset you earn are the same bitcoin. These rights are endogenous. No counterparty grants them and no authority can revoke them.</p><p>Run any yield mechanism through that filter and watch what it asks you to surrender.</p><p>Centralized lending takes self-custody the moment you deposit. Once the coins are theirs to rehypothecate, the 21 million cap stops protecting you, because unbacked claims can be issued against it. Celsius, BlockFi, and Genesis were not bad luck; the structure permits it. Wrapping onto another chain, renBTC, wBTC, bridges, gives up native settlement by design: you no longer hold Bitcoin, you hold a claim on someone else's. Covered calls and structured products break denominational unity, paying you dollars against a bitcoin position, and they can take custody too. GameStop pledged 4,709 of its 4,710 coins and had to derecognize them entirely under GAAP. Staking fails on fixed supply, since the reward is freshly issued tokens that dilute everyone who didn't stake.</p><p>Every alternative fails at least one property. Lightning fails none. The bitcoin stays in your custody, settlement stays native, supply stays fixed, and the asset you earn is the same asset you deployed.</p><p>Denominational unity is the quick version of the test. If a mechanism lets you hold, transact, and earn in the same bitcoin, it almost always preserves the other five. When that unity breaks, something core has already been traded away for the income. That is the property filter, and routing is the only row that stays green. I score every mechanism against all six in <a href='https://zeusln.com/lightning-economics' target='_blank'>Lightning Economics</a>.</p>"
+  },
+  post4: {
+    title: "Same-asset unity: one asset from capital to revenue",
+    date: "May 2026",
+    body: "<p>Every yield mechanism I know of has a seam in it. You put one asset in, you earn a different one out, and somewhere in the middle you usually hand custody to someone else. The seam is where the risk lives.</p><p>Stake a token and your principal is one asset while your reward is freshly issued units of another, diluted by the inflation that funds it. Lend your bitcoin to a desk and you surrender custody at the moment of deposit, then carry that counterparty for the life of the loan. Sell covered calls and your bitcoin sits underneath while your income arrives as fiat premium, on a different ledger, with basis risk between the two. In each case the capital, the medium, and the revenue are three different things, and you are exposed at every join.</p><p>Lightning has no seam. The bitcoin you commit to a channel is the same bitcoin that routes the payment, and the fee you earn is paid in that same bitcoin. Deployed capital, transacted medium, and earned revenue are one asset, from start to finish, held by you, in your custody, the entire time.</p><p>I call this same-asset unity. There is no conversion step, so there is no basis risk. There is no deposit, so there is no counterparty. There is no separate reward token, so there is no dilution. The thing you put to work, the thing that moves, and the thing you are paid are identical down to the satoshi.</p><p>It is worth sitting with how unusual that is. Name another asset where the capital, the rails, and the return are the same instrument under the same key. There isn't one. It is a structural property of routing on Bitcoin, and it is the reason Native Yield preserves everything that made the bitcoin worth holding. I work through the full property case in <a href='https://zeusln.com/lightning-economics' target='_blank'>Lightning Economics</a>.</p>"
+  },
+  post5: {
+    title: "Static capital bias and the Lightning return illusion",
+    date: "May 2026",
+    body: "<p>The first thing most people do with Lightning is check the fee rate. They see single-digit basis points per transaction, decide that is nothing, and move on. Tiny fees, tiny market, not worth the time.</p><p>I made the same assumption. Then I looked at the turnover.</p><p>Anyone with a finance background knows DuPont analysis: you decompose a return into margin and capital velocity. Margin times turnover gets you to ROIC. Almost nobody has run that decomposition on Lightning, which is why it anchors <a href='https://zeusln.com/lightning-economics' target='_blank'>Lightning Economics</a>.</p><p>Our node, Olympus, has been operating for more than four years. Over the last twelve months, 69.52 bitcoin routed through 1.09 bitcoin of deployed routing capital. That is roughly 65 times annualized capital velocity. On total node capital it is about 7x, which puts Lightning next to food wholesalers and healthcare support in Damodaran's dataset, and 21 times faster than banking.</p><p>Now take the 8 basis point fee and multiply it across 65 turns. You get 5.58% gross ROIC, at zero leverage.</p><p>That is the reframe. Banks earn about 1.14% on assets. They reach 11.35% return on equity by stacking 10.7x leverage on top of it. Their entire model is a thin return amplified by borrowed money. Lightning produces multiples of that bank ROA through velocity alone. No leverage, no counterparty, and the bitcoin stays in self-custody the entire time.</p><p>The mistake has a name. I call it static capital bias: looking at the fee on a single transaction and treating it like a bond coupon, a number the capital earns once and then sits on. But routing capital does not sit. It cycles. The fee is small because you are looking at one turn. The return comes from the turns you are not counting.</p>"
+  },
+  post6: {
+    title: "Native Yield: the third category of Bitcoin treasury returns",
+    date: "April 2026",
+    body: "<p>More than 190 public companies now hold Bitcoin. For almost all of them, those holdings earn nothing.</p><p>That surprises people, because the headline playbook looks like it works for everyone. It doesn't. The model Strategy built between 2020 and 2024, issuing equity, convertible debt, and preferred instruments against its Bitcoin to buy more, is genuinely impressive. But it runs on conditions most companies can't meet: an mNAV above 1, capital markets access, investor appetite for preferred equity, and the ability to issue continuously. Strive's CEO put real numbers on the gate. Institutional buyers wanted a minimum of $200 million in issuance, with meaningful appetite starting above $500 million. At around $78,000 a coin, that is about 2,600 bitcoin just to enter, and about 6,400 to be taken seriously. Most treasuries are not close. At least 37 of the top 100 already trade below their net asset value. For them, the dominant playbook is something to watch, not something to run.</p><p>So it helps to name what is actually on the menu. A Bitcoin treasury has three ways to generate a return. Digital credit issues instruments against the holdings to fund more accumulation, the Strategy model. Derivative yield uses financial overlays, covered calls and basis trades, to pull income out of price volatility, where the early miners landed by default. And Native Yield deploys the Bitcoin to the network's own infrastructure, routing payments on Lightning, and earns operational income for doing it.</p><p>The first two have been documented for years. The third had not been, until recently. It only became viable in 2025, once the first companies showed that recurring operational income could be earned directly from Bitcoin's own rails. I wrote <a href='https://zeusln.com/lightning-economics' target='_blank'>Lightning Economics</a> to give that third category a formal framework, the way digital credit already had one.</p><p>The point is not that one wins. These categories are additive, not competing. The point is that if your treasury cannot run the credit playbook, you are not out of options. You have been reading a menu with one item crossed off and the third left blank. I filled in the third.</p>"
   }
 };
 
