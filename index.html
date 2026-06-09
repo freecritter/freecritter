@@ -284,6 +284,38 @@ footer {
 footer a { color: var(--muted); }
 footer a:hover { color: var(--text); }
 
+/* Media */
+.media-item { margin-bottom: 40px; }
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #000;
+}
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.media-meta { margin-top: 14px; }
+.media-title {
+  font-family: var(--serif);
+  font-size: 19px;
+  color: var(--text);
+  line-height: 1.4;
+}
+.media-title a { color: var(--text); }
+.media-title a:hover { color: var(--accent); text-decoration: none; }
+.media-sub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
 @media (max-width: 480px) {
   header h1 { font-size: 24px; }
   .about-intro { font-size: 19px; }
@@ -316,6 +348,7 @@ footer a:hover { color: var(--text); }
       <a href="#about" class="active" onclick="show('about')">About</a>
       <a href="#research" onclick="show('research')">Research</a>
       <a href="#blog" onclick="show('blog')">Writing</a>
+      <a href="#media" onclick="show('media')">Media</a>
     </nav>
   </header>
 
@@ -401,6 +434,22 @@ footer a:hover { color: var(--text); }
       <a href="https://zeusln.com/lightning-economics" target="_blank" class="btn">Read the report</a>
     </div>
     <p class="research-note">Published April 2026. Authored by Chris Ritter. Reviewed by Allen Farrington, Ryan Gentry, Freddie New, and Scott Marmoll. Co-published with <a href="https://www.axiomventures.vc" target="_blank">Axiom Venture Partners Ltd</a>.</p>
+  </section>
+
+  <!-- MEDIA -->
+  <section id="media">
+    <div class="media-item">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/WwCBI6FbwWE"
+          title="YouTube video player" loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="media-meta">
+        <div class="media-title"><a href="https://stephanlivera.com/episode/739/" target="_blank">Can You Actually Earn on Lightning? With Chris Ritter | SLP739</a></div>
+        <div class="media-sub">Stephan Livera Podcast · June 2026</div>
+      </div>
+    </div>
   </section>
 
   <footer>
