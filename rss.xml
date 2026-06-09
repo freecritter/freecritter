@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://freecritter.xyz/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>The exit right: why a centralizing Lightning still cannot take your Bitcoin</title>
+    <link>https://freecritter.xyz/#blog</link>
+    <description>Lightning is centralizing and the data is not subtle. It still cannot seize your Bitcoin or trap it. The reason is one property no dominant node can strip: you can always leave, alone, without anyone's permission.</description>
+    <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-exit-right</guid>
+  </item>
+  <item>
     <title>Can You Actually Earn on Lightning? With Chris Ritter | SLP739</title>
     <link>https://stephanlivera.com/episode/739/</link>
     <description>A conversation on the Stephan Livera Podcast about Lightning Network economics: where routing yield actually comes from, the network's centralization trends, node security, and the growth of Lightning payments.</description>
