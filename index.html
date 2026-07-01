@@ -345,10 +345,10 @@ footer a:hover { color: var(--text); }
       </svg>
     </div>
     <nav>
-      <a href="#about" class="active" onclick="show('about')">About</a>
-      <a href="#research" onclick="show('research')">Research</a>
-      <a href="#blog" onclick="show('blog')">Writing</a>
-      <a href="#media" onclick="show('media')">Media</a>
+      <a href="#about" class="active" onclick="show('about'); return false;">About</a>
+      <a href="#research" onclick="show('research'); return false;">Research</a>
+      <a href="#blog" onclick="show('blog'); return false;">Writing</a>
+      <a href="#media" onclick="show('media'); return false;">Media</a>
     </nav>
   </header>
 
@@ -383,6 +383,11 @@ footer a:hover { color: var(--text); }
   <section id="blog">
     <div id="blog-list-view">
       <ul class="blog-list">
+        <li>
+          <div class="blog-date">July 2026</div>
+          <div class="blog-title"><a href="#" onclick="showPost('post8'); return false;">The flywheel pays the holder: why the best returns go to whoever deploys first</a></div>
+          <div class="blog-excerpt">Every payment network runs on a flywheel. Visa's pays Visa. Lightning's pays the asset holder, and right now it pays early movers the most, because the network is still in its subsidy phase and margins compress as it matures.</div>
+        </li>
         <li>
           <div class="blog-date">June 2026</div>
           <div class="blog-title"><a href="#" onclick="showPost('post7'); return false;">The exit right: why a centralizing Lightning still cannot take your Bitcoin</a></div>
@@ -461,8 +466,8 @@ footer a:hover { color: var(--text); }
     <span>freecritter.xyz</span>
     <span>
       <a href="https://www.linkedin.com/in/freecritter/" target="_blank">LinkedIn</a> · 
-      <a href="https://primal.net/freecritter" target="_blank">NOSTR</a> · 
       <a href="https://x.com/freecritterxyz" target="_blank">X</a> · 
+      <a href="https://primal.net/freecritter" target="_blank">NOSTR</a> · 
       <a href="/rss.xml">RSS</a>
     </span>
   </footer>
@@ -470,6 +475,11 @@ footer a:hover { color: var(--text); }
 
 <script>
 var posts = {
+  post8: {
+    title: "The flywheel pays the holder: why the best returns go to whoever deploys first",
+    date: "July 2026",
+    body: "<p>Most payment networks run on a flywheel, and the mechanics are not mysterious. More users attract more liquidity. More liquidity makes routing more reliable. Better reliability attracts more users. Brian Arthur described the general case decades ago: technologies with increasing returns to adoption get better the more they are adopted. Lightning has this property. Every channel opened improves routing for every participant already on the network.</p><p>The part that gets missed is who the flywheel pays. Visa runs one of the most powerful flywheels ever built, and every turn of it pays Visa, through interchange, not the cardholders and merchants who generate the volume. Safaricom captures the take rate on M-Pesa. In every traditional network an operator sits in the middle and collects. Lightning inverts that. There is no operator in the middle taking a cut. The party who deploys the capital is the same party who routes the payments and the same party who earns the fee. Infrastructure provider, income earner, and asset holder are one.</p><p>Because it is one party holding one asset, the loops compound instead of leaking. I think of it as three loops turning at once, mapped to the three levers that set the return. The inner loop is the fee rate: better routing earns more fee income, which funds better routing. The middle loop is capital deployed: more liquidity makes the network more reliable, which pulls in more enterprise integration, which rewards more deployed capital. The outer loop is the asset itself: more routing activity raises the network's utility, which raises demand for the bitcoin used as routing collateral, which raises the value of the holdings doing the routing. Same asset, three turns, no conversion and no counterparty at any join. I work the loops out in full in <a href='https://zeusln.com/lightning-economics' target='_blank'>Lightning Economics</a>.</p><p>Here is why the timing is not neutral. Lightning fees are underpriced right now, and that is not a market failure. It is the subsidy phase of a two-sided market, the same arc every successful payment network has run: subsidize onboarding to build the network, earn on routing later. Underpricing today is the cost of laying the rails. Which means the margin available to an operator is widest early and compresses as the market matures and fees converge. The independent professional band already sits around 6 to 7 percent, and the direction of travel is down, not up.</p><p>And the volume that turns the flywheel is arriving fast. River processed $1.17 billion over Lightning in November 2025, up 266 percent year over year. Fidelity and Voltage measured payment volume growth of 2,424 percent. Coinbase moved 15 percent of its bitcoin transactions to Lightning within a year of integrating. Square enabled it by default. None of that is speculative pipeline. It is settled volume, and every unit of it is a payment that needs capital in a channel to route it.</p><p>Two things accrue to whoever deploys into that early. The first is the wider margin, before convergence closes it. The second is network position, which does not reprice on its own. A node that is well connected today tends to stay well connected, because routing flows toward the paths that already work, and the capital that built those paths keeps earning the flow. Position compounds. The flywheel can also run in reverse for anyone who waits: idle capital earns the opportunity cost of idle self-custodied bitcoin, which is zero, while the paths and the margins get claimed by the people who moved.</p><p>The flywheel was always going to pay someone. On Lightning, for the first time, it pays the holder instead of the operator in the middle. Right now it pays the early holder the most. That window is open, and it is closing at the speed of every integration that ships.</p>"
+  },
   post7: {
     title: "The exit right: why a centralizing Lightning still cannot take your Bitcoin",
     date: "June 2026",
@@ -513,6 +523,7 @@ function show(id) {
   document.querySelectorAll('nav a').forEach(function(a) { a.classList.remove('active'); });
   document.querySelector('nav a[href="#' + id + '"]').classList.add('active');
   if (id === 'blog') hidePost();
+  if (history.replaceState) { history.replaceState(null, '', '#' + id); }
   window.scrollTo(0, 0);
 }
 

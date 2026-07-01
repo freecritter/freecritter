@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://freecritter.xyz/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>The flywheel pays the holder: why the best returns go to whoever deploys first</title>
+    <link>https://freecritter.xyz/#blog</link>
+    <description>Every payment network runs on a flywheel. Visa's pays Visa. Lightning's pays the asset holder, and right now it pays early movers the most, because the network is still in its subsidy phase and margins compress as it matures.</description>
+    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/post-flywheel-pays-holder</guid>
+  </item>
+  <item>
     <title>The exit right: why a centralizing Lightning still cannot take your Bitcoin</title>
     <link>https://freecritter.xyz/#blog</link>
     <description>Lightning is centralizing and the data is not subtle. It still cannot seize your Bitcoin or trap it. The reason is one property no dominant node can strip: you can always leave, alone, without anyone's permission.</description>
