@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://freecritter.xyz/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>The Bitcoin Yield Most People Still Don't Understand</title>
+    <link>https://www.youtube.com/watch?v=GZEYRCFBobo</link>
+    <description>A conversation on the Less Noise, More Signal podcast about native yield on Bitcoin through Lightning: where the returns come from, why property preservation matters, how the risk is managed, and what it means for institutional adoption.</description>
+    <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+    <guid>https://freecritter.xyz/media-less-noise-more-signal</guid>
+  </item>
+  <item>
     <title>The flywheel pays the holder: why the best returns go to whoever deploys first</title>
     <link>https://freecritter.xyz/#blog</link>
     <description>Every payment network runs on a flywheel. Visa's pays Visa. Lightning's pays the asset holder, and right now it pays early movers the most, because the network is still in its subsidy phase and margins compress as it matures.</description>
